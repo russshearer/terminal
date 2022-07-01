@@ -25,7 +25,9 @@ eval "$(oh-my-posh --init --shell bash --config https://github.com/russshearer/t
 ```
 
 ## Install .bash_aliases
+```bash
 wget https://github.com/russshearer/terminal/raw/main/.bash_aliases -O ~/.bash_aliases
 
 # Reload
 source .bashrc
+```
