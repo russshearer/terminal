@@ -1,7 +1,7 @@
 # Terminal
 My Terminal Configs
 
-### Install Oh my Posh on Linux
+## Install Oh my Posh on Linux
 
 https://ohmyposh.dev/
 
@@ -23,3 +23,9 @@ rm ~/.poshthemes/themes.zip
 ```bash
 eval "$(oh-my-posh --init --shell bash --config https://github.com/russshearer/terminal/raw/main/oh-my-posh/themes/myterm.omp.json)"
 ```
+
+## Install .bash_aliases
+wget https://github.com/russshearer/terminal/raw/main/.bash_aliases -O ~/.bash_aliases
+
+# Reload
+source .bashrc
