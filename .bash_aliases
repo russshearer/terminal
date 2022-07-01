@@ -15,3 +15,5 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# https://gist.github.com/sebnyberg/92587e2423feabc02156e600781e90ac
