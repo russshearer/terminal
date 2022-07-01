@@ -31,3 +31,8 @@ wget https://github.com/russshearer/terminal/raw/main/.bash_aliases -O ~/.bash_a
 # Reload
 source .bashrc
 ```
+
+# Powershell
+
+## Install PowerShell Profile
+Invoke-WebRequest -Uri "https://github.com/russshearer/terminal/raw/main/Microsoft.PowerShell_profile.ps1" -OutFile $profile
