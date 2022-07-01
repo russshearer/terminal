@@ -18,5 +18,5 @@ rm ~/.poshthemes/themes.zip
 
 ### Change prompt and point at Github hosted config file
 ```bash
-eval "$(oh-my-posh --init --shell bash --config https://github.com/russshearer/terminal/raw/main/myterm.omp.json)"
+eval "$(oh-my-posh --init --shell bash --config https://github.com/russshearer/terminal/raw/main/oh-my-posh/themes/myterm.omp.json)"
 ```
