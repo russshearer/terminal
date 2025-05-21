@@ -121,7 +121,7 @@
   "transient_prompt": {
     "foreground": "#FFFFFF",
     "foreground_templates": [
-      "{{ if gt .Code 0 }}#BF616A{{ end }}"
+      "{{ if gt .Code 0 }}#FFFFFF{{ end }}"
     ],
     "template": "\u276f "
   },
