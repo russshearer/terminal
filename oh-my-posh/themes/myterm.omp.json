@@ -118,13 +118,6 @@
     }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
-  "transient_prompt": {
-    "foreground": "#FFFFFF",
-    "foreground_templates": [
-      "{{ if gt .Code 0 }}#BF616A{{ end }}"
-    ],
-    "template": "\u276f "
-  },
   "final_space": true,
   "version": 2
 }
