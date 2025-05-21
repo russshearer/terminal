@@ -119,7 +119,7 @@
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "transient_prompt": {
-    "foreground": "#B48EAD",
+    "foreground": "#FFFFFF",
     "foreground_templates": [
       "{{ if gt .Code 0 }}#BF616A{{ end }}"
     ],
