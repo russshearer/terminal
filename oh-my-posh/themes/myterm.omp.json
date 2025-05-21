@@ -118,12 +118,10 @@
     }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
-  {
-    "transient_prompt": {
-      "background": "transparent",
-      "foreground": "#ffffff",
-      "template": "{{ .Shell }}> "
-    }
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#ffffff",
+    "template": "{{ .Shell }}> "
   },
   "final_space": true,
   "version": 2
