@@ -5,13 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-          "transient_prompt": {
-            "background": "transparent",
-            "foreground": "#ffffff",
-            "template": "{{ .Shell }}> "
-          }
-        },
-        {
           "foreground": "#E06C75",
           "style": "plain",
           "template": "<#ffffff,transparent>╭─</> ",
