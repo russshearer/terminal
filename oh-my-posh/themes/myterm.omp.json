@@ -117,7 +117,10 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "_comment": "Tab title: user@host + current folder",
+  "console_title_template": "{{ .UserName }}@{{ .HostName }} {{ .Folder }}"
+  "_comment": "Tab title: user@host + full path",
+  "_comment": "{{ .UserName }}@{{ .HostName }} {{ .CurrentDir }}"
   "final_space": true,
   "version": 2
 }
