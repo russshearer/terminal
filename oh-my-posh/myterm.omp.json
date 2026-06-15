@@ -55,18 +55,6 @@
         {
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "template": " \uf126 {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
-          "cache": {
-            "duration": "2s",
-            "strategy": "session"
-          },
-          "foreground": "#242424",
-          "background": "#d2ff5e"
-        },
-        {
-          "type": "git",
-          "style": "powerline",
           "foreground": "#193549",
           "background": "#d2ff5e",
           "background_templates": [
