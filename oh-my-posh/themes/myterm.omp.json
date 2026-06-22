@@ -78,10 +78,6 @@
           ],
           "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
           "powerline_symbol": "\ue0b0",
-          "cache": {
-            "duration": "30s",
-            "strategy": "session"
-          }
         },
         {
           "type": "status",
