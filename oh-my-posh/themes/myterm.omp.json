@@ -77,7 +77,7 @@
             "{{ if contains \" Production\" .Name }}p:azure-production-bg{{ end }}"
           ],
           "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
-          "powerline_symbol": "\ue0b0",
+          "powerline_symbol": "\ue0b0"
         },
         {
           "type": "status",
