@@ -147,6 +147,7 @@
     "docker-bg": "#0db7ed",
     "exectime-bg": "#8a3ffc",
     "prompt-ok": "#33DD2D",
-    "prompt-error": "#e81123"
+    "prompt-error": "#e81123",
+    "azure-production-bg": "#f1184c"
   }
 }
