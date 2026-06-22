@@ -72,26 +72,20 @@
           "style": "powerline",
           "foreground": "p:text-light",
           "background": "p:azure-bg",
+          "template": " \uebd8 {{ .EnvironmentName }} ",
           "powerline_symbol": "\ue0b0",
-          "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
           "cache": {
             "duration": "1h",
             "strategy": "session"
           }
         },
         {
-          "type": "exit",
+          "type": "status",
           "style": "powerline",
-          "foreground": "#242424",
-          "background": "#33DD2D",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#f1184c{{ end }}"
-          ],
-          "template": " \ufc8d{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "powerline_symbol": "\ue0b0",
-          "options": {
-            "always_enabled": true
-          }
+          "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
+          "foreground": "#242424",
+          "background": "#33DD2D"
         }
       ]
     },
