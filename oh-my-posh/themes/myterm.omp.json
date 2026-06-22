@@ -76,7 +76,7 @@
           "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
           "powerline_symbol": "\ue0b0",
           "cache": {
-            "duration": "1h",
+            "duration": "30s",
             "strategy": "session"
           }
         },
