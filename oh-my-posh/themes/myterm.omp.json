@@ -22,7 +22,7 @@
           "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}}",
           "powerline_symbol": "\ue0b0",
           "options": {
-            "windows": "\uf871"
+            "windows": "\uf17a"
           }
         },
         {
