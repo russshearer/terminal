@@ -78,6 +78,9 @@
           "cache": {
             "duration": "1h",
             "strategy": "session"
+          },
+          "properties": {
+            "always_enabled": false
           }
         },
         {
