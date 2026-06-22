@@ -73,14 +73,11 @@
           "style": "powerline",
           "foreground": "p:text-light",
           "background": "p:azure-bg",
-          "template": " \uebd8 {{ .EnvironmentName }} ",
+          "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
           "powerline_symbol": "\ue0b0",
           "cache": {
             "duration": "1h",
             "strategy": "session"
-          },
-          "properties": {
-            "always_enabled": false
           }
         },
         {
