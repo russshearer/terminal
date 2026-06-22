@@ -90,7 +90,7 @@
           ],
           "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "properties": {
-            "always_enabled": true
+            "always_enabled": false
           }
         }
       ]
