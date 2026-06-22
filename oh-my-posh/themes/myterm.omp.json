@@ -77,7 +77,11 @@
             "{{ if contains \" Production\" .Name }}#f1184c{{ end }}"
           ],
           "template": "{{ if .EnvironmentName }} \uebd8 {{ .Name }} {{ end }}",
-          "powerline_symbol": "\ue0b0"
+          "powerline_symbol": "\ue0b0",
+          "cache": {
+            "duration": "2s",
+            "strategy": "session"
+          }
         },
         {
           "type": "status",
