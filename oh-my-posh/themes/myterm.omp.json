@@ -83,9 +83,15 @@
           "type": "status",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "foreground": "#242424",
-          "background": "#33DD2D"
+          "background": "#33DD2D",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#f1184c{{ end }}"
+          ],
+          "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
+          "properties": {
+            "always_enabled": true
+          }
         }
       ]
     },
