@@ -72,8 +72,8 @@
           "style": "powerline",
           "foreground": "p:text-light",
           "background": "p:azure-bg",
-          "template": " \uebd8 {{ .EnvironmentName }} ",
           "powerline_symbol": "\ue0b0",
+          "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
           "cache": {
             "duration": "1h",
             "strategy": "session"
