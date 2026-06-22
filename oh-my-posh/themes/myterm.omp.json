@@ -30,7 +30,7 @@
           "style": "powerline",
           "foreground": "#d2ff5e",
           "background": "#0087D8",
-          "template": "{{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
+          "template": "{{ if .SSHSession }}\uf120 {{ end }}{{ .UserName }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
             "display_host": false
