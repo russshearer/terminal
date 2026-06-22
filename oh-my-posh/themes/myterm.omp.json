@@ -74,9 +74,9 @@
           "foreground": "p:text-light",
           "background": "p:azure-bg",
           "background_templates": [
-            "{{ if contains \" Production\" .Name }}p:azure-production-bg{{ end }}"
+            "{{ if contains \" Production\" .Name }}#f1184c{{ end }}"
           ],
-          "template": "{{ if .EnvironmentName }} \uebd8 {{ .EnvironmentName }} {{ end }}",
+          "template": "{{ if .EnvironmentName }} \uebd8 {{ .Name }} {{ end }}",
           "powerline_symbol": "\ue0b0"
         },
         {
