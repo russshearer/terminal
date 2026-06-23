@@ -110,12 +110,13 @@
             "{{ if gt .Ahead 0 }}#f17c37{{ end }}",
             "{{ if gt .Behind 0 }}#89d1dc{{ end }}"
           ],
-          "template": " {{ .HEAD }} {{ if .Behind }}\u2193{{ .Behind }} behind{{ end }}{{ if .Ahead }} \u2191{{ .Ahead }} ahead{{ end }}{{ if .Staging.Changed }} staged:{{ .Staging.Changed }}{{ end }}{{ if .Working.Changed }} modified:{{ .Working.Changed }}{{ end }}{{ if .StashCount }} stash:{{ .StashCount }}{{ end }} {{ if .Working.Changed }}\u2718{{ else }}\u2714{{ end }} ",
+          "template": " \ue725 {{ .HEAD }} {{ if .Behind }}\u2193{{ .Behind }} behind{{ end }}{{ if .Ahead }} \u2191{{ .Ahead }} ahead{{ end }}{{ if .Staging.Changed }} staged:{{ .Staging.Changed }}{{ end }}{{ if .Working.Changed }} modified:{{ .Working.Changed }}{{ end }}{{ if .StashCount }} \uf0c7 {{ .StashCount }}{{ end }} {{ if .Working.Changed }}\u2718{{ else }}\u2714{{ end }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
             "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true
+            "fetch_upstream_icon": false,
+            "branch_icon": ""
           }
         },
         {
