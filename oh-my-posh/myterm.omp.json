@@ -23,7 +23,7 @@
           "style": "diamond",
           "foreground": "#fff",
           "background": "#003543",
-          "template": "{{ if .WSL }}WSL {{ end }}{{ .Icon }} ",
+          "template": "{{ if .WSL }}WSL xxx{{ end }}{{ .Icon }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
             "alpine":           "\uf300",
