@@ -42,7 +42,7 @@
           "foreground": "#fff",
           "background": "#003543",
           "template": "{{ if .WSL }} WSL {{ end }}{{ .Icon }} ",
-          "powerline_symbol": " \ue0b0",
+          "powerline_symbol": "\ue0b0",
           "options": {
             "windows": " \uf17a"
           }
@@ -54,7 +54,7 @@
           "foreground": "#d2ff5e",
           "background": "#0087D8",
           "template": "{{ if .SSHSession }} \uf120 {{ end }}{{ .UserName }} ",
-          "powerline_symbol": " \ue0b0",
+          "powerline_symbol": "\ue0b0",
           "options": {
             "display_host": false
           }
