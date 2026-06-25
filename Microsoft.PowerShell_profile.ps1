@@ -1,3 +1,6 @@
+# Set PSModulePath
+#$env:PSModulePath = "C:\Users\Russ\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules"
+
 # Prompt how-to https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal
 
 # Import modules, Install if needed
@@ -16,8 +19,8 @@ foreach ($module in $modules)
     }
 }
 
-oh-my-posh init pwsh --config https://github.com/russshearer/terminal/raw/main/oh-my-posh/themes/myterm.omp.json | Invoke-Expression
-#oh-my-posh init pwsh --config $ENV:OneDriveCommercial\Documents\ClientConfig\oh-my-posh\themes\myterm.omp.json | Invoke-Expression
+# Prompt settings
+oh-my-posh init bash --config https://raw.githubusercontent.com/russshearer/terminal/refs/heads/main/oh-my-posh/myterm.omp.json | Invoke-Expression
 
 # Python VENV prompt
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
