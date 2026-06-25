@@ -20,7 +20,7 @@ foreach ($module in $modules)
 }
 
 # Prompt settings
-oh-my-posh init bash --config https://raw.githubusercontent.com/russshearer/terminal/refs/heads/main/oh-my-posh/myterm.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config https://raw.githubusercontent.com/russshearer/terminal/refs/heads/main/oh-my-posh/myterm.omp.json | Invoke-Expression
 
 # Python VENV prompt
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
