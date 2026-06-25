@@ -2,7 +2,26 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
   "final_space": true,
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "palette": {
+    "azfunc-bg": "#ffd800",
+    "azure-bg": "#0078d4",
+    "docker-bg": "#0db7ed",
+    "dotnet-bg": "#512bd4",
+    "exectime-bg": "#8a3ffc",
+    "git-bg": "#33DD2D",
+    "git-modified-bg": "#ffca00",
+    "prompt-error": "#e81123",
+    "prompt-ok": "#33DD2D",
+    "text-dark": "#ffffff",
+    "text-light": "#000000"
+  },
+  "upgrade": {
+    "source": "cdn",
+    "interval": "168h",
+    "auto": false,
+    "notice": false
+  },
+  "console_title_template": "{{ .UserName }}@{{ .HostName }} {{ .Folder }}",
 
   "blocks": [
     {
@@ -25,12 +44,7 @@
           "template": "{{ if .WSL }}WSL {{ end }}{{ .Icon }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
-            "ubuntu": "\uf31b",
-            "debian": "\uf306",
-            "arch": "\uf303",
-            "linux": "\uf17c",
-            "windows": "\uf17a",
-            "wsl": "\ue712"
+            "windows": "\uf17a"
           }
         },
 
@@ -62,15 +76,15 @@
         {
           "type": "git",
           "style": "powerline",
-          "foreground": "#193549",
-          "background": "#d2ff5e",
+          "foreground": "p:text-light",
+          "background": "p:git-bg",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
             "{{ if gt .Ahead 0 }}#f17c37{{ end }}",
             "{{ if gt .Behind 0 }}#89d1dc{{ end }}"
           ],
-          "template": " \ue725 {{ .HEAD }} {{ if .Behind }}\u2193{{ .Behind }} behind{{ end }}{{ if .Ahead }} \u2191{{ .Ahead }} ahead{{ end }}{{ if .Staging.Changed }} staged:{{ .Staging.Changed }}{{ end }}{{ if .Working.Changed }} modified:{{ .Working.Changed }}{{ end }}{{ if .StashCount }} \uf0c7 {{ .StashCount }}{{ end }} {{ if .Working.Changed }}\u2718{{ else }}\u2714{{ end }} ",
+          "template": " \ue725 {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf0c7 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0 }} \uf1bb {{ .WorktreeCount }}{{ end }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
             "fetch_stash_count": true,
@@ -126,7 +140,10 @@
           "type": "root",
           "style": "plain",
           "foreground": "#FFD700",
-          "template": "\uf0e7 "
+          "template": "\uf0e7 ",
+          "options": {
+            "root_icon": "\u26a1"
+          }
         },
 
         {
@@ -144,14 +161,8 @@
           "foreground": "#0087D8",
           "template": "\u276f "
         }
+
       ]
     }
-  ],
-
-  "palette": {
-    "text-light": "#000000",
-    "text-dark": "#ffffff",
-    "azure-bg": "#0078d4",
-    "git-bg": "#33DD2D"
-  }
+  ]
 }
