@@ -44,7 +44,7 @@
           "template": "{{ if .WSL }} WSL {{ end }}{{ .Icon }} ",
           "powerline_symbol": "\ue0b0",
           "options": {
-            "windows": " \uf17a"
+            "windows": "\uf17a"
           }
         },
 
